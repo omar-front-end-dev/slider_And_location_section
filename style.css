@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.scroll__bar{
+    background-color: blue;
+    height: 5px;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgb(0, 183, 255);
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.home{
+    height: 700px;
+}
+.services{
+    height: 700px;
+}
+.portfolio{
+    height: 700px;
+}
+.footer{
+    height: 700px;
+}
+h1{
+    margin: 0;
+    padding: 30px;
+    border: 2px solid #000;
+}
+.scroll__top{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: rgb(0, 183, 255);
+    font-size: 30px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    animation-name: btn-smooth;
+    animation-duration: 0.4s;
+    display: none;
+}
+
+@keyframes btn-smooth{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
